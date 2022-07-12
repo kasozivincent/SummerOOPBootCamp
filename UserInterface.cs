@@ -7,7 +7,6 @@ namespace Summer_OOP
     {
         private bool _done = default;
         private Bank _bank = new Bank();
-        
         public void Run()
         {
             while (!_done)
