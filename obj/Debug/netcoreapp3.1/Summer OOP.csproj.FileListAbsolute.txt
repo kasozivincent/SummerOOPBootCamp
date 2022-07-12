@@ -1,0 +1,14 @@
+D:\OOP BootCamp\Summer OOP\Summer OOP\obj\Debug\netcoreapp3.1\Summer OOP.csproj.AssemblyReference.cache
+D:\OOP BootCamp\Summer OOP\Summer OOP\obj\Debug\netcoreapp3.1\Summer OOP.GeneratedMSBuildEditorConfig.editorconfig
+D:\OOP BootCamp\Summer OOP\Summer OOP\obj\Debug\netcoreapp3.1\Summer OOP.AssemblyInfoInputs.cache
+D:\OOP BootCamp\Summer OOP\Summer OOP\obj\Debug\netcoreapp3.1\Summer OOP.AssemblyInfo.cs
+D:\OOP BootCamp\Summer OOP\Summer OOP\obj\Debug\netcoreapp3.1\Summer OOP.csproj.CoreCompileInputs.cache
+D:\OOP BootCamp\Summer OOP\Summer OOP\bin\Debug\netcoreapp3.1\Summer OOP.exe
+D:\OOP BootCamp\Summer OOP\Summer OOP\bin\Debug\netcoreapp3.1\Summer OOP.deps.json
+D:\OOP BootCamp\Summer OOP\Summer OOP\bin\Debug\netcoreapp3.1\Summer OOP.runtimeconfig.json
+D:\OOP BootCamp\Summer OOP\Summer OOP\bin\Debug\netcoreapp3.1\Summer OOP.runtimeconfig.dev.json
+D:\OOP BootCamp\Summer OOP\Summer OOP\bin\Debug\netcoreapp3.1\Summer OOP.dll
+D:\OOP BootCamp\Summer OOP\Summer OOP\bin\Debug\netcoreapp3.1\Summer OOP.pdb
+D:\OOP BootCamp\Summer OOP\Summer OOP\obj\Debug\netcoreapp3.1\Summer OOP.dll
+D:\OOP BootCamp\Summer OOP\Summer OOP\obj\Debug\netcoreapp3.1\Summer OOP.pdb
+D:\OOP BootCamp\Summer OOP\Summer OOP\obj\Debug\netcoreapp3.1\Summer OOP.genruntimeconfig.cache

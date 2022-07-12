@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Au/3Zo+AReDp25bUYNGH8GQ1VivW4NaMwLkX1aAKSCtVWYNbXoxUGZRX7EfmIxbof2dcY1UVgK3F1MZlaQW5iw==",
+  "success": true,
+  "projectFilePath": "D:\\OOP BootCamp\\Summer OOP\\Summer OOP\\Summer OOP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Kasozi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+  ],
+  "logs": []
+}
