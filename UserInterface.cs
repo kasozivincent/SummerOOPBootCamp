@@ -20,6 +20,7 @@ namespace Summer_OOP
                 builder.Append("4 : Apply for loan").AppendLine();
                 builder.Append("5 : Show account details").AppendLine();
                 builder.Append("6 : Calculate Interest").AppendLine();
+                builder.Append("7 : Status Management").AppendLine();
 
                 string menu = builder.ToString();
                 Console.WriteLine(menu);
@@ -38,6 +39,7 @@ namespace Summer_OOP
             else if (cmd == 4) AuthorizeLoan();
             else if (cmd == 5) DisplayAccountsDetails();
             else if (cmd == 6) CalculateInterest();
+            else if (cmd == 7) StatusManagement();
             else
                 Console.WriteLine("illegal command");
         }
@@ -50,7 +52,8 @@ namespace Summer_OOP
 
         private void CreateNewAccount()
         {
-            var newAccountNumber = _bank.CreateNewAccount();
+            Status status = RequestForeign();
+            var newAccountNumber = _bank.CreateNewAccount(status);
             Console.WriteLine($"Your account number is {newAccountNumber}");
         }
 
@@ -88,5 +91,29 @@ namespace Summer_OOP
         }
         private void DisplayAccountsDetails() => Console.WriteLine(_bank.ToString());
         private void CalculateInterest() => _bank.CalculateInterest();
+        
+        private void StatusManagement() 
+        {
+            Console.WriteLine("Enter account number: ");
+            int accountNumber = int.Parse(Console.ReadLine());
+            _bank.StatusManagement(accountNumber, RequestForeign());
+        }
+        
+        private Status RequestForeign()
+        {
+            StringBuilder builder = new StringBuilder();
+            builder.Append("Enter 1 for Foreign").AppendLine();
+            builder.Append("Enter 2 for Domestic").AppendLine();
+
+            Console.WriteLine(builder.ToString());
+            string choice = Console.ReadLine();
+
+            if (choice == "1")
+                return Status.Foreign;
+            else if (choice == "2")
+                return Status.Domestic;
+            else
+                throw new Exception("Invalid Choice");
+        }
     }
 }

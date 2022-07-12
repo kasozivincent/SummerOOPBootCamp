@@ -5,25 +5,33 @@ namespace Summer_OOP
 {
     public class Bank
     {
-        private IDictionary<int, int> _accounts = new Dictionary<int, int>();
+        private IDictionary<int, BankAccount> _accounts = new Dictionary<int, BankAccount>();
         private double _rate = 0.01;
-        private int _nextacct = 0;
+        private int _nextacct = 1;
         
-        public int CreateNewAccount() {
+        public int CreateNewAccount(Status status) {
             var newAccountNumber = _nextacct++;
-            _accounts.Add(newAccountNumber, 0);
+            BankAccount account = new BankAccount(newAccountNumber);
+            account.Status = status;
+            _accounts.Add(newAccountNumber, account);
             return newAccountNumber;
         }
         
-        public int GetAccountBalance(int accountNumber) => _accounts[accountNumber];
+        public void StatusManagement(int accountNumber, Status status) {
+            BankAccount account = _accounts[accountNumber];
+            account.Status = status;
+        }
+        public int GetAccountBalance(int accountNumber) => _accounts[accountNumber].Balance;
         
         public void DepositAmount(int accountNumber, int amount) {
-            var balance = _accounts[accountNumber];
-            _accounts.Add(accountNumber, balance + amount);
+            var bankAccount = _accounts[accountNumber];
+            var balance = bankAccount.Balance;
+            bankAccount.Balance = balance + amount;
         }
         
         public bool AuthorizeLoan(int accountNumber, int loanAmount) {
-            var balance = _accounts[accountNumber];
+            var bankAccount = _accounts[accountNumber];
+            var balance = bankAccount.Balance;
             return balance >= loanAmount / 2;
         }
         
@@ -33,7 +41,7 @@ namespace Summer_OOP
             StringBuilder builder = new StringBuilder();
             builder.Append($"The bank has {_accounts.Count} accounts.").AppendLine();
             foreach(int accountNumber in accountNumbers)
-                builder.Append($"Account Number : {accountNumber}   Balance : {_accounts[accountNumber]}").AppendLine();
+                builder.Append(_accounts[accountNumber].ToString()).AppendLine();
             return builder.ToString(); 
         }
 
@@ -42,9 +50,10 @@ namespace Summer_OOP
             var accountNumbers = _accounts.Keys;
             foreach (int accountNumber in accountNumbers)
             {
-                var balance = _accounts[accountNumber];
+                var bankAccount = _accounts[accountNumber];
+                var balance = bankAccount.Balance;
                 var newBalance = (int) (balance * (1 + _rate));
-                _accounts[accountNumber] = newBalance;
+                bankAccount.Balance = newBalance;
             }
         }
 
