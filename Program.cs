@@ -62,7 +62,7 @@ namespace Summer_OOP
 
         private void CreateNewAccount()
         {
-            current = nextacct++; // generate account number
+            current = nextacct = nextacct + 1; // generate account number
             accounts.Add(current, 0);
             Console.WriteLine($"Your new account number is {current}");
         }
