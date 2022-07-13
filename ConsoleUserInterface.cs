@@ -3,10 +3,16 @@ using System.Text;
 
 namespace Summer_OOP
 {
-    public class UserInterface 
+    public class ConsoleUserInterface 
     {
         private bool _done = default;
-        private Bank _bank = new Bank();
+        private Bank _bank;
+        
+        public ConsoleUserInterface(Bank bank)
+        {
+            this._bank = bank;
+        }
+        
         public void Run()
         {
             while (!_done)

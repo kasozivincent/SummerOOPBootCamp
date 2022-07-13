@@ -8,7 +8,11 @@ namespace Summer_OOP
     {
         public static void Main(String[] args)
         {
-            UserInterface program = new UserInterface();
+            //composition root
+            int accountNumber = 1;
+            IDictionary<int, BankAccount> accounts = new Dictionary<int, BankAccount>();
+            Bank bank = new Bank(accounts, accountNumber);
+            ConsoleUserInterface program = new ConsoleUserInterface(bank);
             program.Run();
         }
     }
