@@ -14,9 +14,15 @@ namespace Summer_OOP
             this._nextacct = lastAccountNumber;
         }
         
-        public int CreateNewAccount(Status status) {
+        public int CreateNewAccount(int type, Status status) {
             var newAccountNumber = _nextacct++;
-            BankAccount account = new BankAccount(newAccountNumber);
+            BankAccount account;
+            if (type == 1)
+                account = new SavingsAccount(newAccountNumber);
+            else if (type == 2)
+                account = new CheckingAccount(newAccountNumber);
+            else
+                throw new Exception("Invalid Account type");
             account.Status = status;
             _accounts.Add(newAccountNumber, account);
             return newAccountNumber;
@@ -55,9 +61,8 @@ namespace Summer_OOP
         public void CalculateInterest()
         {
             foreach (var account in _accounts.Values)
-                account.CalculateInterest();
+                if(account is SavingsAccount savingsAccount)
+                    savingsAccount.CalculateInterest();
         }
-
-
     }
 }

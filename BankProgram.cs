@@ -4,8 +4,15 @@ using System.Text;
 
 namespace Summer_OOP
 {
-    public class BankProgram
+    public static class BankProgram
     {
+        interface ITest
+        {
+            void Foo();
+        }
+
+  
+        
         public static void Main(String[] args)
         {
             //composition root
@@ -14,6 +21,9 @@ namespace Summer_OOP
             Bank bank = new Bank(accounts, accountNumber);
             ConsoleUserInterface program = new ConsoleUserInterface(bank);
             program.Run();
+
+            IDictionary<int, string> boo = new Dictionary<int, string>();
+            boo[1] = "Hello";
         }
     }
 }
