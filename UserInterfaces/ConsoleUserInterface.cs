@@ -3,7 +3,7 @@ using System.Text;
 
 namespace Summer_OOP
 {
-    public class ConsoleUserInterface 
+    public class ConsoleUserInterface : IUserInterface
     {
         private bool _done = default;
         private Bank _bank;
@@ -59,7 +59,7 @@ namespace Summer_OOP
         private void CreateNewAccount()
         {
             Status status = RequestForeign();
-            var newAccountNumber = _bank.CreateNewAccount(status);
+            var newAccountNumber = _bank.CreateNewAccount(3, status);
             Console.WriteLine($"Your account number is {newAccountNumber}");
         }
 
@@ -70,8 +70,6 @@ namespace Summer_OOP
             var balance = _bank.GetAccountBalance(accountNumber);
             Console.WriteLine($"The balance of account {accountNumber} is  {balance}");           
         }
-        
-        
 
         private void DepositAmount()
         {

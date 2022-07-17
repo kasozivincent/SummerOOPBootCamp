@@ -13,5 +13,17 @@
         public override void CalculateInterest()
         {
         }
+        
+        public override int CompareTo(BankAccount other)
+        {
+            var ourBalance = Balance;
+            var theirBalance = other.Balance;
+            if (ourBalance == theirBalance)
+                return 0;
+            else if (ourBalance > theirBalance)
+                return 1;
+            else
+                return -1;
+        }
     }
 }
