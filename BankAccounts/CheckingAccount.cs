@@ -10,5 +10,8 @@
         public override bool AuthorizeLoan(int loanAmount)
               =>  Balance >= 2 * loanAmount / 3;
 
+        public override void CalculateInterest()
+        {
+        }
     }
 }

@@ -35,17 +35,17 @@ namespace Summer_OOP
 
         public int GetAccountBalance(int accountNumber)
         {
-            var bankAccount = _accounts[accountNumber];
+            BankAccount bankAccount = _accounts[accountNumber];
             return bankAccount.Balance;
         } 
         
         public void DepositAmount(int accountNumber, int amount) {
-            var bankAccount = _accounts[accountNumber];
+            BankAccount bankAccount = _accounts[accountNumber];
             bankAccount.DepositAmount(amount);
         }
         
         public bool AuthorizeLoan(int accountNumber, int loanAmount) {
-            var bankAccount = _accounts[accountNumber];
+            BankAccount bankAccount = _accounts[accountNumber];
             return bankAccount.AuthorizeLoan(loanAmount);
         }
         
@@ -61,8 +61,7 @@ namespace Summer_OOP
         public void CalculateInterest()
         {
             foreach (var account in _accounts.Values)
-                if(account is SavingsAccount savingsAccount)
-                    savingsAccount.CalculateInterest();
+                account.CalculateInterest();
         }
     }
 }

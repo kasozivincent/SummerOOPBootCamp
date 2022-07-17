@@ -14,7 +14,7 @@
         public override bool AuthorizeLoan(int loanAmount)
           =>  Balance >= 0.5 * loanAmount;
 
-        public void CalculateInterest()
+        public override void CalculateInterest()
             => Balance += (int) (Balance * _rate);
     
     }

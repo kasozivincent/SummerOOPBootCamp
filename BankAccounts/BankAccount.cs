@@ -15,5 +15,6 @@ namespace Summer_OOP
         public Status Status { get; set; }
         public void DepositAmount(int amount) =>   Balance += amount;
         public abstract bool AuthorizeLoan(int loanAmount);
+        public abstract void CalculateInterest();
     }
 }
