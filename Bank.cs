@@ -22,7 +22,9 @@ namespace Summer_OOP
             if (type == 1)
                 account = new SavingsAccount(newAccountNumber);
             else if (type == 2)
-                account = new CheckingAccount(newAccountNumber);
+                account = new RegularCheckingAccount(newAccountNumber);
+            else if (type == 3)
+                account = new InterestCheckingAccount(newAccountNumber);
             else
                 throw new Exception("Invalid Account type");
             account.Status = status;

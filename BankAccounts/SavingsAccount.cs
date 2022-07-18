@@ -30,6 +30,16 @@ namespace Summer_OOP
 
         public override void CalculateInterest()
             => Balance += (int) (Balance * _rate);
+
+        public override bool Equals(Object other)
+        {
+            if (other is SavingsAccount savingsAccount)
+            {
+                var obj = (SavingsAccount) other;
+                return (this.AccountNumber == obj.AccountNumber) ? true : false;
+            }
+            return false;
+        }
     
     }
 }

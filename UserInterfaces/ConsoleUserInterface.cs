@@ -58,8 +58,10 @@ namespace Summer_OOP
 
         private void CreateNewAccount()
         {
+            Console.WriteLine("Enter account type(1=savings, 2=checking, 3=interest checking): ");
+            var accountType = int.Parse(Console.ReadLine());
             Status status = RequestForeign();
-            var newAccountNumber = _bank.CreateNewAccount(3, status);
+            var newAccountNumber = _bank.CreateNewAccount(accountType, status);
             Console.WriteLine($"Your account number is {newAccountNumber}");
         }
 
