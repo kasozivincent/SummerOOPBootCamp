@@ -7,7 +7,7 @@ namespace Summer_OOP
         Foreign, Domestic
     }
     
-    public abstract class BankAccount
+    public abstract class BankAccount : IComparable<BankAccount>
     {
         public BankAccount(int accountNumber) => AccountNumber = accountNumber;
         public int AccountNumber { get;}
@@ -15,5 +15,7 @@ namespace Summer_OOP
         public Status Status { get; set; }
         public void DepositAmount(int amount) =>   Balance += amount;
         public abstract bool AuthorizeLoan(int loanAmount);
+        public abstract void CalculateInterest();
+        public abstract int CompareTo(BankAccount other);
     }
 }

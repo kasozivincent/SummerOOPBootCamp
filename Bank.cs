@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Summer_OOP
@@ -13,6 +14,7 @@ namespace Summer_OOP
             this._accounts = repository;
             this._nextacct = lastAccountNumber;
         }
+
         
         public int CreateNewAccount(int type, Status status) {
             var newAccountNumber = _nextacct++;
@@ -20,7 +22,9 @@ namespace Summer_OOP
             if (type == 1)
                 account = new SavingsAccount(newAccountNumber);
             else if (type == 2)
-                account = new CheckingAccount(newAccountNumber);
+                account = new RegularCheckingAccount(newAccountNumber);
+            else if (type == 3)
+                account = new InterestCheckingAccount(newAccountNumber);
             else
                 throw new Exception("Invalid Account type");
             account.Status = status;
@@ -35,17 +39,17 @@ namespace Summer_OOP
 
         public int GetAccountBalance(int accountNumber)
         {
-            var bankAccount = _accounts[accountNumber];
+            BankAccount bankAccount = _accounts[accountNumber];
             return bankAccount.Balance;
         } 
         
         public void DepositAmount(int accountNumber, int amount) {
-            var bankAccount = _accounts[accountNumber];
+            BankAccount bankAccount = _accounts[accountNumber];
             bankAccount.DepositAmount(amount);
         }
         
         public bool AuthorizeLoan(int accountNumber, int loanAmount) {
-            var bankAccount = _accounts[accountNumber];
+            BankAccount bankAccount = _accounts[accountNumber];
             return bankAccount.AuthorizeLoan(loanAmount);
         }
         
@@ -61,8 +65,7 @@ namespace Summer_OOP
         public void CalculateInterest()
         {
             foreach (var account in _accounts.Values)
-                if(account is SavingsAccount savingsAccount)
-                    savingsAccount.CalculateInterest();
+                account.CalculateInterest();
         }
     }
 }

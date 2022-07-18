@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace Summer_OOP
 {
+    class Person
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int Age { get; set; }
+    }
+    
     public static class BankProgram
     {
-        interface ITest
-        {
-            void Foo();
-        }
-
-  
         
         public static void Main(String[] args)
         {
@@ -22,8 +23,6 @@ namespace Summer_OOP
             ConsoleUserInterface program = new ConsoleUserInterface(bank);
             program.Run();
 
-            IDictionary<int, string> boo = new Dictionary<int, string>();
-            boo[1] = "Hello";
         }
     }
 }
