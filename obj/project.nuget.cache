@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Au/3Zo+AReDp25bUYNGH8GQ1VivW4NaMwLkX1aAKSCtVWYNbXoxUGZRX7EfmIxbof2dcY1UVgK3F1MZlaQW5iw==",
+  "dgSpecHash": "TExqSkxCwWLDowLtVehzDqOk01jNEpl1PyxLCZ7ZfSX9jZM+aGQ/7O1p69fSeUg8Yfd6fxEYasH7fuADmZTSnQ==",
   "success": true,
-  "projectFilePath": "D:\\OOP BootCamp\\Summer OOP\\Summer OOP\\Summer OOP.csproj",
+  "projectFilePath": "C:\\Users\\PEOPLE POWER I.P.S\\Desktop\\CSharp\\SummerOOPBootCamp\\Summer OOP.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Kasozi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+    "C:\\Users\\PEOPLE POWER I.P.S\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\PEOPLE POWER I.P.S\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\PEOPLE POWER I.P.S\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\PEOPLE POWER I.P.S\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.26\\microsoft.netcore.app.host.win-x64.3.1.26.nupkg.sha512"
   ],
   "logs": []
 }

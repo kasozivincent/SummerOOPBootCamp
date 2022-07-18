@@ -12,3 +12,10 @@ D:\OOP BootCamp\Summer OOP\Summer OOP\bin\Debug\netcoreapp3.1\Summer OOP.pdb
 D:\OOP BootCamp\Summer OOP\Summer OOP\obj\Debug\netcoreapp3.1\Summer OOP.dll
 D:\OOP BootCamp\Summer OOP\Summer OOP\obj\Debug\netcoreapp3.1\Summer OOP.pdb
 D:\OOP BootCamp\Summer OOP\Summer OOP\obj\Debug\netcoreapp3.1\Summer OOP.genruntimeconfig.cache
+C:\Users\PEOPLE POWER I.P.S\Desktop\CSharp\SummerOOPBootCamp\obj\Debug\netcoreapp3.1\Summer OOP.csproj.AssemblyReference.cache
+C:\Users\PEOPLE POWER I.P.S\Desktop\CSharp\SummerOOPBootCamp\obj\Debug\netcoreapp3.1\Summer OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PEOPLE POWER I.P.S\Desktop\CSharp\SummerOOPBootCamp\obj\Debug\netcoreapp3.1\Summer OOP.AssemblyInfoInputs.cache
+C:\Users\PEOPLE POWER I.P.S\Desktop\CSharp\SummerOOPBootCamp\obj\Debug\netcoreapp3.1\Summer OOP.AssemblyInfo.cs
+C:\Users\PEOPLE POWER I.P.S\Desktop\CSharp\SummerOOPBootCamp\obj\Debug\netcoreapp3.1\Summer OOP.csproj.CoreCompileInputs.cache
+C:\Users\PEOPLE POWER I.P.S\Desktop\CSharp\SummerOOPBootCamp\obj\Debug\netcoreapp3.1\Summer OOP.dll
+C:\Users\PEOPLE POWER I.P.S\Desktop\CSharp\SummerOOPBootCamp\obj\Debug\netcoreapp3.1\Summer OOP.pdb

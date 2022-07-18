@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\OOP BootCamp\\Summer OOP\\Summer OOP\\Summer OOP.csproj": {}
+    "C:\\Users\\PEOPLE POWER I.P.S\\Desktop\\CSharp\\SummerOOPBootCamp\\Summer OOP.csproj": {}
   },
   "projects": {
-    "D:\\OOP BootCamp\\Summer OOP\\Summer OOP\\Summer OOP.csproj": {
+    "C:\\Users\\PEOPLE POWER I.P.S\\Desktop\\CSharp\\SummerOOPBootCamp\\Summer OOP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\OOP BootCamp\\Summer OOP\\Summer OOP\\Summer OOP.csproj",
+        "projectUniqueName": "C:\\Users\\PEOPLE POWER I.P.S\\Desktop\\CSharp\\SummerOOPBootCamp\\Summer OOP.csproj",
         "projectName": "Summer OOP",
-        "projectPath": "D:\\OOP BootCamp\\Summer OOP\\Summer OOP\\Summer OOP.csproj",
-        "packagesPath": "C:\\Users\\Kasozi\\.nuget\\packages\\",
-        "outputPath": "D:\\OOP BootCamp\\Summer OOP\\Summer OOP\\obj\\",
+        "projectPath": "C:\\Users\\PEOPLE POWER I.P.S\\Desktop\\CSharp\\SummerOOPBootCamp\\Summer OOP.csproj",
+        "packagesPath": "C:\\Users\\PEOPLE POWER I.P.S\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PEOPLE POWER I.P.S\\Desktop\\CSharp\\SummerOOPBootCamp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Kasozi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\PEOPLE POWER I.P.S\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Users\\Public\\Documents\\Infragistics\\NuGet\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,8 +49,20 @@
           "warn": true,
           "downloadDependencies": [
             {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.22, 3.1.22]"
+              "version": "[3.1.26, 3.1.26]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
             }
           ],
           "frameworkReferences": {
@@ -59,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
